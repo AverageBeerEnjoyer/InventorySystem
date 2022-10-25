@@ -1,0 +1,10 @@
+{% macro input(type, name, form, placeholder) %}
+        <input
+            type="{{ type }}"
+            name="{{ name }}"
+            {% if form.fields contains name  %}
+                value="{{ form.fields[name] | first }}"
+            {% endif %}
+            placeholder="{{ placeholder }}"
+        >
+{% endmacro %}

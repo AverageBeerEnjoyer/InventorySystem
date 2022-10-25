@@ -17,12 +17,13 @@
                 <li><a href="/equipment">Оборудование</a></li>
                 <li><a href="/employees">Сотрудники</a></li>
                 <li><a href="/login">Войти</a></li>
+                <li><a href="/unlogin">Выйти</a></li>
             </ul>
         </div>
     </div>
 
     {% block content %}
-    {% endblock %}
+{% endblock %}
 </div>
 <script src="/js/vendor/jquery.js"></script>
 <script src="/js/vendor/what-input.js"></script>

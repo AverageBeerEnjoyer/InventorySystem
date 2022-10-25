@@ -17,5 +17,6 @@ fun formRouter(
     "/equipment/{id}" bind Method.GET to handlerStorage.showEquipmentHandler,
     "/ping" bind Method.GET to { Response(Status.OK) },
     "/login" bind Method.GET to handlerStorage.showAuthorizationHandler,
-    "/login" bind Method.POST to handlerStorage.authorizationHandler
+    "/login" bind Method.POST to handlerStorage.authorizationHandler,
+    "/unlogin" bind Method.GET to handlerStorage.unloginHandler
 )

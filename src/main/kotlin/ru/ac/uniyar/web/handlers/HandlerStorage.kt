@@ -41,4 +41,6 @@ class HandlerStorage(
         operationStorage.fetchWithLoginEmployeeOperation,
         operationStorage.generateTokenOperation
     )
+
+    val unloginHandler: UnloginHandler = UnloginHandler()
 }

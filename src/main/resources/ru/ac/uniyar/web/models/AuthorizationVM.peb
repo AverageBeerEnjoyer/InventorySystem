@@ -1,10 +1,10 @@
 {% extends "./layout.peb" %}
-
+{% import "./util.peb" %}
 {% block content %}
     <div class="grid-x grid-padding-x">
         <form method="POST" action="/login">
-            <input type="text" placeholder="login" name="login" value={{ model.login }}>
-            <input type="password" placeholder="password" name="password" value={{ model.password }}>
+            {{ input("text", "login", model.webForm, "логин") }}
+            {{ input("password", "password", model.webForm, "пароль") }}
             <div class="error">{{ model.error }}</div>
             <input type="submit" value="Login" class="button">
         </form>
